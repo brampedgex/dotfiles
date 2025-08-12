@@ -33,4 +33,4 @@ export EDITOR='nvim'
 # Aliases
 alias ls='ls --color'
 alias vim='nvim'
-
+alias sudo='sudo '
