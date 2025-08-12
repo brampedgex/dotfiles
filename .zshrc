@@ -10,11 +10,24 @@ fi
 source "${ZINIT_HOME}/zinit.zsh"
 
 # Add zinit plugins (TBD)
+zinit light zsh-users/zsh-syntax-highlighting
+zinit light zsh-users/zsh-completions
+zinit light zsh-users/zsh-autosuggestions
 
+# History configuration
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 HISTDUP=erase
+setopt append_history
+setopt share_history
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# Other options
 unsetopt autocd
 
 # Keybindings
