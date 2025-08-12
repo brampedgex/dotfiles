@@ -34,6 +34,8 @@ unsetopt autocd
 bindkey -e
 # Bind ^L to clear so the prompt can be positioned at the top
 bindkey -s '^L' 'clear^M'
+bindkey '^p' history-search-backward
+bindkey '^n' history-search-forward
 
 autoload -Uz compinit && compinit
 
