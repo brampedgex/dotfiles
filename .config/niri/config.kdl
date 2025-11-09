@@ -65,6 +65,10 @@ layout {
 spawn-at-startup "swww-daemon"
 spawn-at-startup "vicinae" "server"
 
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+}
+
 hotkey-overlay {
     skip-at-startup
 }
