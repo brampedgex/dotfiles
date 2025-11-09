@@ -42,8 +42,8 @@ layout {
 
     border {
         width 2
-        active-color "#7fc8ff"
-        inactive-color "#505050"
+	active-gradient from="#89b4fa" to="cba6f7" angle=45 relative-to="workspace-view"
+        inactive-color "#6c7086"
         urgent-color "#9b0000"
     }
 
@@ -54,9 +54,14 @@ layout {
         offset x=0 y=5
         color "#00000090"
     }
+
+    struts {
+	left 16
+	right 16
+    }
 }
 
-spawn-at-startup "swww"
+spawn-at-startup "swww-daemon"
 
 hotkey-overlay {
     skip-at-startup
