@@ -12,7 +12,7 @@
         "searchFiles": false
     },
     "theme": {
-        "name": "rose-pine"
+        "name": "catppuccin-mocha"
     },
     "window": {
         "csd": true,
