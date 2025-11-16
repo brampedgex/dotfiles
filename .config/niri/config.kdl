@@ -1,7 +1,7 @@
 prefer-no-csd
 
 input {
-    focus-follows-mouse max-scroll-amount="40%"
+    focus-follows-mouse max-scroll-amount="0%"
     warp-mouse-to-focus
 
     keyboard {
