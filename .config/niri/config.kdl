@@ -13,7 +13,7 @@ input {
     touchpad {
         tap
         natural-scroll
-	scroll-factor 0.5
+        scroll-factor 0.5
     }
 }
 
@@ -44,7 +44,7 @@ layout {
 
     border {
         width 2
-	active-gradient from="#89b4fa" to="cba6f7" angle=45 relative-to="workspace-view"
+        active-gradient from="#89b4fa" to="cba6f7" angle=45 relative-to="workspace-view"
         inactive-color "#6c7086"
         urgent-color "#9b0000"
     }
@@ -52,14 +52,14 @@ layout {
     shadow {
         on
         softness 30
-	spread 5
+        spread 5
         offset x=0 y=5
         color "#00000090"
     }
 
     struts {
-	left 16
-	right 16
+        left 16
+        right 16
     }
 }
 
@@ -69,6 +69,7 @@ environment {
 
 spawn-at-startup "swww-daemon"
 spawn-at-startup "vicinae" "server"
+spawn-at-startup "hypridle"
 
 cursor {
     xcursor-theme "Bibata-Modern-Classic"
@@ -116,7 +117,7 @@ binds {
     Mod+T hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+Y hotkey-overlay-title="Browse the Web: firefox" { spawn "firefox"; }
     Mod+D hotkey-overlay-title="Run an Application: vicinae" { spawn "vicinae" "toggle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "loginctl" "lock-session"; }
 
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
 
