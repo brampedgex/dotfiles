@@ -74,6 +74,10 @@ cursor {
     xcursor-theme "Bibata-Modern-Classic"
 }
 
+overview {
+    backdrop-color "#11111b"
+}
+
 hotkey-overlay {
     skip-at-startup
 }
