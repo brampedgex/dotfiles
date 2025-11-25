@@ -63,6 +63,10 @@ layout {
     }
 }
 
+workspace "work"
+workspace "browser"
+workspace "chat"
+
 environment {
     QT_QPA_PLATFORMTHEME "qt6ct"
 }
@@ -99,6 +103,7 @@ window-rule {
 window-rule {
     match app-id=r#"vesktop"#
     default-column-width { proportion 1.0; }
+    open-on-workspace "chat"
 }
 
 window-rule {
