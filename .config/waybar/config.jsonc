@@ -12,11 +12,10 @@
         "clock",
     ],
     "modules-right": [
-        "mpd",
+        "tray",
         "wireplumber",
         "network",
         "battery",
-        "tray",
         "custom/power"
     ],
     // Modules configuration

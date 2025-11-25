@@ -36,11 +36,16 @@ button:hover {
 
 #workspaces button {
     padding: 0 0;
+    margin-right: 4px;
     background-color: transparent;
     color: rgb(205, 214, 244);
     border-radius: 8px;
     transition-property: background-color, color;
     transition-duration: 0.2s;
+}
+
+#workspaces button:last-child {
+    margin-right: 0
 }
 
 #workspaces button:hover {
@@ -192,7 +197,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #313244;
 }
 
 #tray > .passive {
