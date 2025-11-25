@@ -46,10 +46,9 @@
             "critical": 10
         },
         "format": "{icon} {capacity}%",
-        "format-full": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-full": "{icon} { capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁼", "󰁽", "󰁾", "󰁿", "󰁿", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "network": {
         "format-wifi": "{icon}{essid}", 
