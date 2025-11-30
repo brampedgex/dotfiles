@@ -24,6 +24,11 @@ output "HDMI-A-2" {
     position x=0 y=0
 }
 
+output "DP-1" {
+    mode "1920x1080@120"
+    scale 0.8
+}
+
 layout {
     gaps 8
 
@@ -33,6 +38,7 @@ layout {
     preset-column-widths {
         proportion 0.5
         proportion 0.66667
+        proportion 0.75
     }
 
     default-column-width { proportion 0.5; }
@@ -107,8 +113,18 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"Spotify"#
+    default-column-width { proportion 0.75; }
+}
+
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+}
+
+window-rule {
+    match app-id=r#"brampling3D"#
+    default-column-width { proportion 0.75; }
 }
 
 binds {

@@ -42,6 +42,8 @@ autoload -Uz compinit && compinit
 # oh-my-posh prompt (installed via paru)
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/config.toml)"
 
+export PATH=$PATH:$HOME/.local/bin
+
 # Set preferred editor
 export EDITOR='nvim'
 
